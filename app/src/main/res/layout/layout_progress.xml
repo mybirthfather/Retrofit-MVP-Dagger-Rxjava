@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lrl.app.widget.TouchInterceptLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/progress"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    >
+
+    <FrameLayout
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:background="@drawable/back_frame_progress"
+        android:translationZ="10dp"
+        android:elevation="2dp"
+        >
+
+        <com.lrl.app.widget.UILoadingBar xmlns:progress="http://schemas.android.com/apk/res-auto"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            progress:borderSize="3dp" />
+
+    </FrameLayout>
+</com.lrl.app.widget.TouchInterceptLayout>

@@ -4,6 +4,7 @@ package com.lrl.app.http;
 
 import com.lrl.app.baen.BaseBean;
 import com.lrl.app.baen.EmptyBean;
+import com.lrl.app.baen.LoginBean;
 
 import java.util.Map;
 
@@ -27,4 +28,11 @@ public interface ApiService {
     @FormUrlEncoded
     @POST
     Observable<BaseBean<EmptyBean>> addLog(@Url String path, @FieldMap Map<String, String> map);
+    /**
+     * 模拟的登陆 不用关心细节
+     */
+    @FormUrlEncoded
+    @POST
+    Observable<BaseBean<LoginBean>> login (@Url String path, @FieldMap Map<String, String> map);
+
 }
